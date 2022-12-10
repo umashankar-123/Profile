@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.sidebar{
+    position: absolute;
+    background-color: rgb(192, 178, 178);
+    /*width: 18vw;*/
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif; 
+    transition: transform 0.3s ease-in;  
+}
+
+.sidebar nav{
+    padding: 35px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+}
+.main{
+    /*background-color: yellow;*/
+    width: 82vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /*background-color: rgb(255, 0, 251);*/
+    height: 58vh;
+    width: 80vw;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hello{
+    font-size: 3em;
+    color:rgb(232, 65, 65);
+}
+
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+
+.about{
+    font-size: 2.5em;
+    color:rgb(232, 65, 65);
+}
+
+.moreAbout{
+    font-size: 2.2em;
+    margin-top: 23px;
+}
+
+.buttons{
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 3px;
+    background-color: rgb(232, 65, 65);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    font-size: 17px;
+    padding: 8px 12px;
+    margin: 12px 0;
+}
+
+.btn-sm:hover{
+    background-color:rgb(192, 178, 178);
+    color: black;
+    transition: 0.6s ease;
+}
+
+.buttons button:hover{
+    background-color:rgb(192, 178, 178);
+    color: black;
+    transition: 0.6s ease;
+}
+
+.devPic img{
+    height: 58vh;
+    border-radius: 50%;
+    border:2px solid rgb(232, 65, 65);
+}
+
+.devPic img:hover{
+    border:3px dotted white;
+    transition: 10ms ease-out;
+}
+
+.contactform{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 34px;
+    padding-top: 40px;
+    margin: 88px;
+}   
+
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;  
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check-input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+#emailHelp{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 2px;
+    padding: 3px 0 0 0;
+}
+
+.blogItem{
+    margin: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.blogContainer{
+    margin: 0 88px;
+}
+.blogContainer h1{
+    margin: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.blogItem p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.intro{
+    margin: 80px 88px;
+}
+
+.intro h2{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 12px;
+}
+
+.skillContainer{
+    padding: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.hundered{
+    width: 265px;
+    background-color: blue;
+}
+
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 175px;
+    margin-top: 8px;
+}
+
+.ham{
+    margin-left: 10px;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+@media (max-width: 1615px){
+    .buttons{
+        font-size: 6px;
+    }
+    
+    .devInfo{
+        font-size: 10px;
+    }
+
+
+    .intro, .blogContainer, .contactform{
+        margin: 50px 8px;
+    }
+    /*.sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }*/
+}
